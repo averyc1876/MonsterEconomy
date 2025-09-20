@@ -1,0 +1,49 @@
+﻿{
+  "code": "gearrope",
+	"class":  "monstereconomy.ItemGearRope",
+
+	"attributes": {
+		"capacity": 12,
+		"acceptedItemCodes": ["game:item-gear-rusty","game:item-gear-temporal"]
+	},
+
+	"creativeInventoryStacks": [
+		{
+			"tabs": ["general", "tools"],
+			"stacks": [{ "type": "item", "code": "monstereconomy:gearrope",
+									 "attributes": {
+										 "contents": [ 
+											 {"type": "item", "code": "game:item-gear-rusty", "stackSize": 12} ] } }]
+		}
+	],
+	"heldSounds": {
+		"invpickup": "game:wearable/brigandine*",
+		"invplace": "game:wearable/plate*",
+		"equip": "game:wearable/plate*",
+		"unequip": "game:wearable/plate*"
+	},
+	"maxstacksize": 1,
+	"storageFlags": 2,
+
+  "shape": { "base": "item/gear-rope" },
+	"heldRightTpIdleAnimation": "holdinglanternrighthand",
+
+	"guiTransform": {
+		"translation": { "x": -2, "y": 0.5, "z": 0 },
+		"rotation": { "x": -28, "y": -153, "z": 140 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+		"scale": 1.5
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0.14, "z": 0 },
+		"rotation": { "x": 93, "y": 0, "z": -35 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0.5299 },
+		"scale": 4
+	},
+  "tpHandTransform": {
+		"translation": { "x": -0.75, "y": -1.7, "z": -0.775 },
+		"rotation": { "x": 3, "y": -173, "z": 88 },
+		"origin": { "x": 0.5, "y": 1, "z": 0.5 },
+		"scale": 0.65
+	}
+}

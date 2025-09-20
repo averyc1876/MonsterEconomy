@@ -1,0 +1,52 @@
+﻿{
+	"code": "gearscrap",
+	"class": "monstereconomy.ItemGearScrap",
+	"variantgroups": [
+		{ "code": "type", "states": ["rusty"] }
+	],
+
+	"behaviorsByType": {
+    "*-rusty": [
+      { "name": "GroundStorable",
+				"properties": {
+	     		"layout": "Messy12",
+          "placeRemoveSound": "game:wearable/plate*"
+				}
+      }
+    ]
+  },
+	"attributes": {
+		"forgable": true,
+		"workableTemperature": 1050,
+		"requiresAnvilTier": 1,	
+		"onTongTransform": {
+			"translation": { "x": -1.4, "y": -0.37, "z": -0.65 },
+			"rotation": { "x": -13, "y": 0, "z": 7 },
+			"origin": { "x": 0.5, "y": -0, "z": 0.5 },
+			"scale": 0.75
+		}
+	},
+
+	"creativeinventory": { "general": ["*"], "items": ["*"] },
+	"maxstacksize": 32,
+	"materialDensity": 3750,
+
+	"shape": { "base": "item/gearscrap" },
+	"guiTransform": {
+		"translation": { "x": 0, "y": 3, "z": 0 },
+		"rotation": { "x": 133, "y": -119, "z": -1 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 2.5
+	},
+	"groundTransform": {
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 3.76
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.85, "y": -0.15, "z": -0.75 },
+		"rotation": { "x": 4, "y": 41, "z": -62 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 0.65
+	}
+}

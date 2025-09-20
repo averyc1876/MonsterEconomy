@@ -1,0 +1,297 @@
+﻿[
+  // "behaviors/2": Health
+    {
+      "side": "server", "op": "addmerge",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/server/behaviors/2/currenthealthByType",
+      "value": {
+	  		"*-normal": 28,       //12
+	  		"*-deep": 35,         //16
+	  		"*-tainted": 46,      //22
+	  		"*-corrupt": 58,      //30
+	  		"*-nightmare": 72,    //40
+	  		"*-double-headed": 90 //54
+      }
+    },
+    {
+      "side": "server", "op": "addmerge",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/server/behaviors/2/maxhealthByType",
+      "value": {
+	  		"*-normal": 28,       //12
+	  		"*-deep": 35,         //16
+	  		"*-tainted": 46,      //22
+	  		"*-corrupt": 58,      //30
+	  		"*-nightmare": 72,    //40
+	  		"*-double-headed": 90 //54
+      }
+    },
+
+  // "behaviors/7": Emotion States
+    {
+      "side": "server", "op": "addmerge",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/server/behaviors/7/states/0/chanceByType",
+      "value": {
+	  		"*-normal": 0.5,      //0.15
+	  		"*-deep": 0.2,        //0.07
+	  		"*-tainted": 0.1,     //0.03
+	  		"*-corrupt": 0.05,    //0.015
+        "*-nightmare": 0.015  //0.01
+      }
+    },
+
+  // "behaviors/8": Task AI
+    // "aitasks/0": Flee entity (generic)
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/0/entityCodes",
+        "value": ["villager-*", "trader-*", "wolf-*", "fox-*", "hyena-*", "bear-*"]
+      },
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/0/minDayLightByType",
+        "value": {
+	    		"*-normal": 0.2,     //0.925
+	    		"*-deep": 0.5,       //0.97
+	    		"*-tainted": 1.2,    //2
+	    		"*-corrupt": 2,      //2
+          "*-nightmare": 3,    //2
+          "*-double-headed": 4 //2
+        }
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/0/fleeingDistance",
+        "value": 80 //64
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/0/ignoreDeepDayLight",
+        "value": false //true
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/0/priority",
+        "value": 2.5 //3
+      },
+
+    // "aitasks/1": Flee entity (on damaged)
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/1/entityCodes",
+        "value": ["trader-*", "wolf-*", "fox-*", "hyena-*", "bear-*"]
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/1/movespeed",
+        "value": 0.028 //0.018
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/1/animationSpeed",
+        "value": 2 //1.3
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/1/priority",
+        "value": 3 //2.5
+      },
+
+    // "aitasks/2": Melee attack
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/2/entityCodes",
+        "value": ["wolf-*", "fox-*", "hyena-*", "bear-*", "hare-*", "chicken-*"]
+      },
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/2/damageByType",
+        "value": {
+          "*-normal": 4,          //2.5
+          "*-deep": 6,            //4
+          "*-tainted": 8,         //8
+          "*-corrupt": 12,        //12
+          "*-nightmare": 22,      //20
+          "*-double-headed": 26   //24
+        }
+      },
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/2/damageTierByType",
+        "value": {
+          "*-normal": 2,         //0
+          "*-deep": 2,           //1
+          "*-tainted": 3,        //2
+          "*-corrupt": 4,        //3
+          "*-nightmare": 5,      //4
+          "*-double-headed": 5   //4
+        }
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/2/priority",
+        "value": 2 //2
+      },
+
+    // "aitasks/3": Throw attack
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/entityCodes",
+        "value": ["villager-*", "trader-*", "wolf-*", "fox-*", "hyena-*", "bear-*", "hare-*", "chicken-*"]
+      },
+      {
+        "side": "server", "op": "remove",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/maxcooldown"
+      },
+      {
+        "side": "server", "op": "remove",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/mincooldown"
+      },
+      {
+        "side": "server", "op": "add",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/maxcooldownByType",
+        "value": {
+          "*-normal": 10000,
+          "*-deep": 12000,
+          "*-tainted": 10000,
+          "*": 25000 //10000
+        }
+      },
+      {
+        "side": "server", "op": "add",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/mincooldownByType",
+        "value": {
+          "*-normal": 2000,
+          "*-deep": 8000,
+          "*-tainted": 5000,
+          "*": 10000 //1000
+        }
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/projectileDamage",
+        "value": 2.5 //1
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/projectileDamageTier",
+        "value": 1 //0
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/priorityForCancel",
+        "value": 3.5 //9
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/3/priority",
+        "value": 1.2 //1.5
+      },
+
+    // "aitasks/4": Seek entity
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/4/entityCodes",
+        "value": ["trader-*", "wolf-*", "fox-*", "hyena-*", "bear-*", "hare-*", "chicken-*"]
+      },
+      {
+        "side": "server", "op": "remove",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/4/seekingRange"
+      },
+      {
+        "side": "server", "op": "add",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/4/seekingRangeByType",
+        "value": {
+        "*-deep": 5,
+        "*-nightmare": 15,
+        "*-double-headed": 20,
+        "*": 10 //20
+        }
+      },
+
+    // "aitasks/5": Idle anim (despair)
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/5/chance",
+        "value": 0.1 //0.001
+      },
+
+    // "aitasks/6": Idle anim (cry)
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/drifter.json",
+        "path": "/server/behaviors/8/aitasks/6/chance",
+        "value": 0.1 //0.001
+      },
+
+    // "aitasks/7": Wander (walking)
+    // "aitasks/8": Wander (crawling)
+    // "aitasks/9": Get out of water
+    // "aitasks/10": Look around
+
+  // Spawn Conditions
+    {
+      "side": "server", "op": "replace",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/server/spawnconditions/runtime/chance",
+      "value": 0.075 //0.1
+    },
+    {
+      "side": "server", "op": "replace",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/server/spawnconditions/runtime/maxLightLevel",
+      "value": 5 //7
+    },
+    {
+      "side": "server", "op": "replace",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/server/spawnconditions/runtime/maxYByType/*-normal",
+      "value": 100 //2
+    },
+    {
+      "side": "server", "op": "addmerge",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/server/spawnconditions/runtime/maxQuantityByType",
+      "value": {
+        "*-deep": 3,     //4
+        "*-tainted": 2,  //3
+        "*-corrupt": 2,  //3
+        "*-nightmare": 1 //3
+      }
+    },
+
+  // Other Properties
+    {
+      "side": "server", "op": "replace",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/idleSoundRange",
+      "value": 5 //14
+    }
+]

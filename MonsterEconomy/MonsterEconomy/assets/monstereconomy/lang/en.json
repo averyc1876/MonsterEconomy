@@ -1,0 +1,7 @@
+﻿{
+  "item-gearscrap-rusty": "Rusty gear fragments",
+  "item-gearrope": "Gear tie",
+
+  
+  "monstereconomy:gearrope-contents": "{0} {1}{p0:s||s}"
+}

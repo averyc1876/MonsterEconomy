@@ -1,0 +1,32 @@
+﻿[
+  {
+    "side": "server", "op": "replace",
+    "file": "game:itemtypes/resource/gear", "path":  "/classByType/gear-rusty",
+    "value": "monstereconomy.ItemRustyGear"
+  },
+  {
+    "side": "server", "op": "addmerge",
+    "file": "game:itemtypes/resource/gear", "path":  "/behaviors",
+    "value": [
+            { "name": "GroundStorable",
+		          "properties": {
+		          	"layout": "Stacking",
+                "placeRemoveSound": "game:block/meteoriciron-hit-pickaxe0",
+		          	"stackingModel": "monstereconomy:item/gear-rusty-pile",
+		          	"upSolid": false,
+		          	"modelItemsToStackSizeRatio": 13,
+		          	"stackingCapacity": 12,
+		          	"transferQuantity": 1,
+		          	"bulkTransferQuantity": 2,
+		          	"collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.15, "z2": 1 },
+		          	"cbScaleYByLayer": 0.15
+              }
+            }
+          ]
+  },
+  {
+    "side": "server", "op": "replace",
+    "file": "game:itemtypes/resource/gear", "path":  "/maxstacksizeByType/gear-rusty",
+    "value": 4
+  }
+]

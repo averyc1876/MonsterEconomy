@@ -1,0 +1,7 @@
+﻿[
+	{
+		"side": "server", "op": "addmerge",
+		"file": "game:itemptypes/resource/gear", "path": "/attributesByType/*-temporal",
+		"value": {"currency": {"value": 5}}
+	}
+]

@@ -1,0 +1,209 @@
+﻿[
+	{
+      "side": "server", "op": "replace",
+      "file": "game:entities/lore/drifter.json",
+      "path": "/server/behaviors/9/dropsByType",
+      "value": {
+          "*-normal": [
+              {
+                  "type": "item",
+                  "code": "clay-blue",
+                  "quantity": { "avg": 6.5, "var": 1 }
+              },
+              {
+                  "type": "item",
+                  "code": "flaxfibers",
+                  "quantity": { "avg": 0.35, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "monstereconomy:gearscrap-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.2, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.05, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-temporal",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.02, "var": 0 }
+              }
+          ],
+          "*-deep": [
+              {
+                  "type": "item",
+                  "code": "clay-blue",
+                  "quantity": { "avg": 6.5, "var": 1 }
+              },
+              {
+                  "type": "item",
+                  "code": "clay-fire",
+                  "quantity": { "avg": 1.5, "var": 0.5 }
+              },
+              {
+                  "type": "item",
+                  "code": "flaxfibers",
+                  "quantity": { "avg": 0.5, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "monstereconomy:gearscrap-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.35, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.085, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-temporal",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.035, "var": 0 }
+              }
+          ],
+          "*-tainted": [
+              {
+                  "type": "item",
+                  "code": "clay-red",
+                  "quantity": { "avg": 6.5, "var": 1 }
+              },
+              {
+                  "type": "item",
+                  "code": "flaxfibers",
+                  "quantity": { "avg": 0.55, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "monstereconomy:gearscrap-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.4, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.1, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-temporal",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.04, "var": 0 }
+              }
+          ],
+          "*-corrupt": [
+              {
+                  "type": "item",
+                  "code": "clay-red",
+                  "quantity": { "avg": 8.5, "var": 1 }
+              },
+              {
+                  "type": "item",
+                  "code": "clay-fire",
+                  "quantity": { "avg": 3, "var": 0.5 }
+              },
+              {
+                  "type": "item",
+                  "code": "flaxfibers",
+                  "quantity": { "avg": 0.75, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "monstereconomy:gearscrap-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.6, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.2, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-temporal",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.075, "var": 0 }
+              }
+          ],
+          "*-nightmare": [
+              {
+                  "type": "item",
+                  "code": "clay-red",
+                  "quantity": { "avg": 10, "var": 1.5 }
+              },
+              {
+                  "type": "item",
+                  "code": "clay-fire",
+                  "quantity": { "avg": 4.5, "var": 1 }
+              },
+              {
+                  "type": "item",
+                  "code": "flaxfibers",
+                  "quantity": { "avg": 1, "var": 0.5 }
+              },
+              {
+                  "type": "item",
+                  "code": "monstereconomy:gearscrap-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 1, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.8, "var": 0 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-temporal",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.2, "var": 0 }
+              }
+          ],
+          "*-double-headed": [
+              {
+                  "type": "item",
+                  "code": "clay-red",
+                  "quantity": { "avg": 12, "var": 2.5 }
+              },
+              {
+                  "type": "item",
+                  "code": "clay-fire",
+                  "quantity": { "avg": 4.5, "var": 1 }
+              },
+              {
+                  "type": "item",
+                  "code": "flaxfibers",
+                  "quantity": { "avg": 1.5, "var": 1 }
+              },
+              {
+                  "type": "item",
+                  "code": "monstereconomy:gearscrap-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 1, "var": 0.5 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-rusty",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 1.25, "var": 1 }
+              },
+              {
+                  "type": "item",
+                  "code": "gear-temporal",
+                  "dropModbyStat": "rustyGearDropRate",
+                  "quantity": { "avg": 0.5, "var": 0 }
+              }
+          ],
+      }
+    }
+]

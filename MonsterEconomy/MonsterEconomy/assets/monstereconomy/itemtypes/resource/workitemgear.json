@@ -1,0 +1,41 @@
+﻿{
+  "code": "workitem-gear",
+  "class": "monstereconomy.WorkItemGear",
+  "variantgroups": [
+    { "code": "type", "states": ["rusty"] }
+  ],
+
+  "attributes": {
+    "onTongTransform": {
+			"translation": { "x": -0.9, "y": -0.74, "z": -0.39 },
+			"rotation": { "x": -102, "y": -109, "z": 16 }
+		},
+    "workableTemperature": 1050,
+    "requiresAnvilTier": 1
+  },
+
+  "maxstacksize": 1,
+  "storageFlags": 5,
+  "materialDensity": 4000,
+
+  "texture": { "base": "game:block/metal/tarnished/rusty-iron" },
+	  
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 47, "y": -42, "z": 0 },
+		"origin": { "x": 0.43, "y": 0.6, "z": 0.48 },
+		"scale": 2.8
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.6, "z": 0.5 },
+		"scale": 3.69
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.45, "y": -0.38, "z": -0.07 },
+		"rotation": { "x": -86, "y": 1, "z": -10 },
+		"origin": { "x": 0.5, "y": 0.2, "z": 0.5 },
+		"scale": 1
+	}
+}
