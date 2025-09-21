@@ -1,0 +1,339 @@
+﻿[
+  // "behaviors/2": Health
+    {
+      "side": "server", "op": "addmerge",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/server/behaviors/2/currenthealthByType",
+      "value": {
+	  		"*-surface": 9,     //10
+			  "*-deep": 10,       //13
+			  "*-tainted": 13,    //18
+			  "*-corrupt": 16,    //25
+			  "*-nightmare": 20,  //32
+			  "*-gearfoot": 25    //50
+      }
+    },
+    {
+      "side": "server", "op": "addmerge",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/server/behaviors/2/maxhealthByType",
+      "value": {
+	  		"*-surface": 9,     //10
+			  "*-deep": 10,       //13
+			  "*-tainted": 13,    //18
+			  "*-corrupt": 16,    //25
+			  "*-nightmare": 20,  //32
+			  "*-gearfoot": 25    //50
+      }
+    },
+
+  // "behaviors/8": Task AI
+    // "aitasks/0": Melee attack
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/entityCodes",
+        "value": ["trader-*", "wolf-*", "fox-*", "hyena-*", "bear-*"]
+      },
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/damageByType",
+        "value": {
+          "*-surface": 4,      //1.5
+          "*-deep": 4.5,       //2.5
+          "*-tainted": 5,      //5
+          "*-corrupt": 6.5,    //7
+          "*-nightmare": 8.5,  //12
+          "*-gearfoot": 10     //14
+        }
+      },
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/damageTierByType",
+        "value": {
+          "*-surface": 2,    //0
+          "*-deep": 2,       //1
+          "*-tainted": 3,    //2
+          "*-corrupt": 3,    //3
+          "*-nightmare": 4,  //4
+          "*-gearfoot": 4    //4
+        }
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/animationSpeed",
+        "value": 2 //1.5
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/soundStartMs",
+        "value": 300 //400
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/damagePlayerAtMs",
+        "value": 300 //400
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/attackDurationMs",
+        "value": 750 //1000
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/mincooldown",
+        "value": 300 //500
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/maxcooldown",
+        "value": 1000 //1750
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/0/priority",
+        "value": 5 //4
+      },
+
+    // "aitasks/1": Flee entity (generic)
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/1/entityCodes",
+        "value": ["trader-*", "wolf-*", "fox-*", "hyena-*", "bear-*"]
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/1/movespeed",
+        "value": 0.06 //0.03
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/1/animationSpeed",
+        "value": 2 //1
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/1/seekingRange",
+        "value": 12 //9
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/1/fleeingDistance",
+        "value": 20 //22
+      },
+
+    // "aitasks/2": Flee entity (on damaged)
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/2/entityCodes",
+        "value": ["trader-*", "wolf-*", "fox-*", "hyena-*", "bear-*"]
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/2/movespeed",
+        "value": 0.06 //0.03
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/2/animationSpeed",
+        "value": 2 //1
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/2/seekingRange",
+        "value": 18 //35
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/2/priority",
+        "value": 4 //3
+      },
+
+    // "aitasks/3": Get out of water
+    // "aitasks/4": Stay in range
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/4/entityCodes",
+        "value": ["trader-*"]
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/4/ignoreDeepDayLight",
+        "value": false //true
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/4/searchRange",
+        "value": 40 //30
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/4/targetRangeTolerance",
+        "value": 8 //5
+      },
+
+    // "aitasks/5": Turret mode
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/5/projectileDamageByType",
+        "value": {
+          "*-surface": 6,       //5
+          "*-deep": 6.5,        //6
+          "*-tainted": 7,       //7
+          "*-corrupt": 8.5,     //8
+          "*-nightmare": 10,    //9
+          "*-gearfoot": 12      //10
+        }
+      },
+      {
+        "side": "server", "op": "addmerge",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/5/projectileDamageTierByType",
+        "value": {
+          "*-surface": 2,      //0
+          "*-deep": 2,         //0
+          "*-tainted": 3,      //0
+          "*-corrupt": 3,      //0
+          "*-nightmare": 4,    //0
+          "*-gearfoot": 5      //0
+        }
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/5/firingRangeMin",
+        "value": 10 //14
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/5/abortRange",
+        "value": 8 //14
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/5/priority",
+        "value": 3 //1.5
+      },
+
+    // "aitasks/6": Idle anim (contort)
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/6/animationSpeed",
+        "value": 1.3333 //1
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/6/minduration",
+        "value": 6000 //8000
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/6/maxduration",
+        "value": 6000 //8000
+      },
+      {
+        "side": "server", "op": "replace",
+        "file": "game:entities/lore/bowtorn.json",
+        "path": "/server/behaviors/8/aitasks/6/priorityForCancel",
+        "value": 4 //1.35
+      },
+
+    // "aitasks/7": Wander
+    // "aitasks/8": Look around
+
+    // New task: Reposition (on damaged)
+      //{
+      //  "side": "server", "op": "addmerge",
+      //  "file": "game:entities/lore/bowtorn.json",
+      //  "path": "/server/behaviors/8/aitasks/-",
+      //  "value": {
+      //    "code": "wander",
+      //    "priority": 4,
+      //    "movespeed": 0.06,
+      //    "animation": "run",
+      //    "animationSpeed": 2,
+      //    "whenInEmotionState": "aggressiveondamage"
+      //  }
+      //},
+
+  // Spawn Conditions
+    {
+      "side": "server", "op": "replace",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/server/spawnconditions/runtime/chance",
+      "value": 0.03 //0.1
+    },
+    {
+      "side": "server", "op": "replace",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/server/spawnconditions/runtime/maxLightLevel",
+      "value": 5 //7
+    },
+    {
+      "side": "server", "op": "addmerge",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/server/spawnconditions/runtime/groupSizeByType/*/avg",
+      "value": 1
+    },
+    {
+      "side": "server", "op": "addmerge",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/server/spawnconditions/runtime/groupSizeByType/*-surface/var",
+      "value": 1
+    },
+
+  // Other Properties
+    {
+      "side": "server", "op": "add",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/canClimbAnyWhere",
+      "value": true
+    },
+    {
+      "side": "server", "op": "add",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/climbTouchDistance",
+      "value": 0.1
+    },
+    {
+      "side": "server", "op": "add",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/fallDamage",
+      "value": false
+    },
+    {
+      "side": "server", "op": "add",
+      "file": "game:entities/lore/bowtorn.json",
+      "path": "/rotateModelOnClimb",
+      "value": false
+    }
+]

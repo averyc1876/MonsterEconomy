@@ -132,12 +132,12 @@
         "file": "game:entities/lore/drifter.json",
         "path": "/server/behaviors/8/aitasks/2/damageTierByType",
         "value": {
-          "*-normal": 2,         //0
+          "*-normal": 1,         //0
           "*-deep": 2,           //1
-          "*-tainted": 3,        //2
-          "*-corrupt": 4,        //3
-          "*-nightmare": 5,      //4
-          "*-double-headed": 5   //4
+          "*-tainted": 2,        //2
+          "*-corrupt": 3,        //3
+          "*-nightmare": 3,      //4
+          "*-double-headed": 4   //4
         }
       },
       {
@@ -268,12 +268,6 @@
       "file": "game:entities/lore/drifter.json",
       "path": "/server/spawnconditions/runtime/maxLightLevel",
       "value": 5 //7
-    },
-    {
-      "side": "server", "op": "replace",
-      "file": "game:entities/lore/drifter.json",
-      "path": "/server/spawnconditions/runtime/maxYByType/*-normal",
-      "value": 100 //2
     },
     {
       "side": "server", "op": "addmerge",
